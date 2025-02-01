@@ -3,7 +3,7 @@ _start:
 	mov rax, 1
 	mov rdi, 1
 	mov rsi, hello
-	mov rdx, 15
+	mov rdx, 14
 	syscall
 
 	mov rax, 60
@@ -11,4 +11,4 @@ _start:
 	syscall
 
 hello:
-	db "Hello, World!"
+	db "Hello, World!",0xA
