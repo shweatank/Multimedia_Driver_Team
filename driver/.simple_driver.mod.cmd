@@ -1,0 +1,1 @@
+cmd_/home/shivam/repos/Multimedia_Driver_Team/driver/simple_driver.mod := printf '%s\n'   simple_driver.o | awk '!x[$$0]++ { print("/home/shivam/repos/Multimedia_Driver_Team/driver/"$$0) }' > /home/shivam/repos/Multimedia_Driver_Team/driver/simple_driver.mod
