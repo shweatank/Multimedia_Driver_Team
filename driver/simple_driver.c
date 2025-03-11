@@ -1,3 +1,5 @@
+/* Linux Kernel Module with file operations open, releasw, read and, write */
+
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/uaccess.h>
@@ -20,9 +22,10 @@ static int c(struct inode *i, struct file *f) {
 
 static ssize_t r(struct file *f, char __user *u, size_t s, loff_t *o) {
     int l = strlen(b);
-    if (s > l) s = l;
-    if (copy_to_user(u, b, s)) return -EFAULT;
+    if(s > l) s = l;
+    if(copy_to_user(u, b, s))return -EFAULT;
     printk(KERN_INFO "r: %s\n", b);
+    b[0]='\0';
     return s;
 }
 
