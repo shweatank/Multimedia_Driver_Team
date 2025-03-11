@@ -1,1 +1,0 @@
-cmd_/home/shivam/repos/Multimedia_Driver_Team/driver/simple_driver.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/x86/module.lds -o /home/shivam/repos/Multimedia_Driver_Team/driver/simple_driver.ko /home/shivam/repos/Multimedia_Driver_Team/driver/simple_driver.o /home/shivam/repos/Multimedia_Driver_Team/driver/simple_driver.mod.o;  true
