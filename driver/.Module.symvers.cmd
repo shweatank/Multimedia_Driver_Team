@@ -1,0 +1,1 @@
+cmd_/home/shivam/repos/Multimedia_Driver_Team/driver/Module.symvers :=  sed 's/ko$$/o/'  /home/shivam/repos/Multimedia_Driver_Team/driver/modules.order | scripts/mod/modpost -m      -o /home/shivam/repos/Multimedia_Driver_Team/driver/Module.symvers -e -i Module.symvers -T - 
